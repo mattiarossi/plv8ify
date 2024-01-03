@@ -35,7 +35,7 @@
   "scripts": {
     "build": "rm -rf dist; tsc --project tsconfig.build.json",
     "prepublish": "bun run build && chmod +x dist/src/index.js",
-    "postinstall": "bun run build && chmod +x dist/src/index.js",
+    "postinstall": "bun run build && chmod +x dist/src/index.js && yarn --check-files --ignore-scripts",
     "test": "bun test",
     "dev": "bun example:turf-js",
     "test:prod-version": "bun run build && bun run --bun dist/src/index.js version",
