@@ -8,6 +8,7 @@
     "plv8ify": "dist/src/index.js"
   },
   "prepublish": "bun run build && chmod +x dist/src/index.js",
+  "prepare": "bun run build && chmod +x dist/src/index.js",
   "dependencies": {
     "arg": "5.0.1",
     "bun-types": "^1.0.21",
@@ -35,7 +36,6 @@
   "scripts": {
     "build": "rm -rf dist; tsc --project tsconfig.build.json",
     "prepublish": "bun run build && chmod +x dist/src/index.js",
-    "prepare": "bun run build && chmod +x dist/src/index.js",
     "test": "bun test",
     "dev": "bun example:turf-js",
     "test:prod-version": "bun run build && bun run --bun dist/src/index.js version",
