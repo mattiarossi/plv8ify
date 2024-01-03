@@ -7,7 +7,7 @@
   "bin": {
     "plv8ify": "dist/src/index.js"
   },
-  "prepublish": "chmod +x dist/src/index.js",
+  "prepublish": "bun run build && chmod +x dist/src/index.js",
   "dependencies": {
     "arg": "5.0.1",
     "dotenv": "16.0.3",
