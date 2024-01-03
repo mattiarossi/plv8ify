@@ -24,7 +24,7 @@
     "@turf/helpers": "6.5.0",
     "@types/dotenv": "8.2.0",
     "@types/node": "18.11.7",
-    "bun-types": "1.0.1",
+    "bun-types": "^1.0.21",
     "mathjs": "11.6.0",
     "object-hash": "3.0.0",
     "prettier": "2.5.1",
